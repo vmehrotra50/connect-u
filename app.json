@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "connect-u",
+    "slug": "connect-u",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "connect-u"
+}
