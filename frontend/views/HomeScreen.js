@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import AddEvent from '../components/AddEvent.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,10 +17,7 @@ class HomeScreen extends Component {
         // }
         return (
             <View>
-                <Tab.Navigator>
-                    <Tab.Screen name="Home" component={HomeScreen} />
-                    
-                </Tab.Navigator>
+                <AddEvent visible={true} />
             </View>
         );
     }

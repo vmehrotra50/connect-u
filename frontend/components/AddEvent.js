@@ -5,6 +5,7 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 
 class AddEvent extends React.Component {
     constructor (props) {
+        super(props);
         this.state = {
             title: "",
             description: "",
@@ -21,7 +22,7 @@ class AddEvent extends React.Component {
 
     render() {
         return ( // form stuff goes here
-            <View style={styles.centeredView}>
+            <View>
                 <Modal animationType="slide"
                   transparent={true}
                   visible={this.state.visible}>
@@ -38,13 +39,7 @@ class AddEvent extends React.Component {
                         display="default"
                         onChange={(datetime) => this.setState({ datetime: datetime })} />
 
-                    <MapPicker
-                        initialCoordinate={{
-                            latitude: 37.78825,
-                            longitude: -122.4324,
-                        }}
-                        onLocationSelect={({latitude, longitude})=>this.setState({ latitude: latitude, longitude: longitude})}
-                    />
+                    
                 </Modal>
             </View>
         );
